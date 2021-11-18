@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+       
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+
+        
+      </div>
+    </div>
+  </nav>
+
+
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="search"  #myInput>
+    </div>
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="text" class="form-control" #myInput>
+    </div>
+   
+  </form>
+
+  <div>data:{{reqdata}}</div>
+
+
+  <br>
+  <hr>
+
+  <form class="row g-3">
+    <div class="col-md-6 text-warning">distinct until change
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="search" #myInput2 >
+    </div>
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Password</label>
+      <input type="text" class="form-control" #myInput2>
+    </div>
+   
+  </form>
+
+  <div>data:{{reqdata2}}</div>
+
+  <ngx-loading-bar [height]="'5px'"  [color]="'#28a745'"></ngx-loading-bar>
+  <button  class="btn btn-primary text-warning"   (click)="startLoading()">start </button><hr><br>
+  <button class="btn btn-danger text-warning "    (click)="stopLoading()">stop</button>
